@@ -21,7 +21,7 @@ export default function Logon() {
             history.push('profile');
 
         } catch (err) {
-            alert('Falha no Login, Tente Novamente!');
+            alert('ID incorreto, Tente Novamente!');
         }
     }
 

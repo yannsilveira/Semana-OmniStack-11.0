@@ -30,7 +30,7 @@ export default function Incidents() {
 
     return (
         <Fragment>
-            <SafeAreaView style={styles.safeareaview}/>
+            <SafeAreaView style={styles.safeareaview} />
             <View style={styles.container}>
                 <View style={styles.header}>
                     <Image source={logoImg} />
@@ -46,6 +46,8 @@ export default function Incidents() {
                     <Text style={styles.incidentValue}>{incident.name} de {incident.city}/{incident.uf}</Text>
                     <Text style={styles.incidentProperty}>CASO:</Text>
                     <Text style={styles.incidentValue}>{incident.title}</Text>
+                    <Text style={styles.incidentProperty}>DESCRIÇÃO:</Text>
+                    <Text style={styles.incidentValue}>{incident.description}</Text>
                     <Text style={styles.incidentProperty}>VALOR:</Text>
                     <Text style={styles.incidentValue}>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</Text>
                 </View>
